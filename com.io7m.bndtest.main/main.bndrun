@@ -1,5 +1,0 @@
--runfw: \
-  org.apache.felix.framework;version="[6.0.0,7.0.0)"
-
--runbundles: \
-  com.io7m.bndtest.main

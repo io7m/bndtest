@@ -37,18 +37,18 @@ public final class Speak implements SpeakType
   @Activate
   public void onActivate()
   {
-    System.out.printf("speak: onActivate\n");
+    System.out.printf("Speak: onActivate\n");
   }
 
   @Deactivate
   public void onDeactivate()
   {
-    System.out.printf("speak: onDeactivate\n");
+    System.out.printf("Speak: onDeactivate\n");
   }
 
   @Override
   public void speak(final String message)
   {
-    System.out.printf("speak: %s\n", message);
+    System.out.printf("Speak: %s\n", message);
   }
 }

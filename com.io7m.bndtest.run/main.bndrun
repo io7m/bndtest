@@ -1,0 +1,20 @@
+-runfw: \
+  org.apache.felix.framework
+
+-runee: JavaSE-11
+
+-runrequires: \
+  osgi.identity;filter:='(osgi.identity=com.io7m.bndtest.main)'
+
+-runbundles: \
+  com.io7m.bndtest.api,           \
+  com.io7m.bndtest.main,          \
+  com.io7m.bndtest.vanilla,       \
+  org.apache.felix.gogo.command,  \
+  org.apache.felix.gogo.runtime,  \
+  org.apache.felix.gogo.shell,    \
+  org.apache.felix.log,           \
+  org.apache.felix.scr,           \
+  org.apache.felix.shell,         \
+  org.apache.felix.shell.remote,  \
+  osgi.promise,                   \
