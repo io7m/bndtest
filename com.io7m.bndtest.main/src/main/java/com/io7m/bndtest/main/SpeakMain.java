@@ -44,6 +44,6 @@ public final class SpeakMain
   @Activate
   public void onActivate()
   {
-    this.speaker.get().speak("Hello again!");
+    this.speaker.get().speak("Hello again, again!");
   }
 }
