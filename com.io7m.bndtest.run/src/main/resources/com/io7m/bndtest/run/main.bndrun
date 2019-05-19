@@ -1,0 +1,23 @@
+-standalone: \
+  target/index.xml
+
+-runfw: \
+  org.apache.felix.framework
+
+-runee: JavaSE-11
+
+-resolve.effective: active
+
+-runproperties: \
+  felix.log.level=1,                       \
+  org.osgi.framework.storage=/tmp/bundles, \
+  osgi.shell.telnet.ip=127.0.0.1,          \
+  osgi.shell.telnet.port=8000,             \
+  osgi.startLevel=10,                      \
+  osgi.bundles.defaultStartLevel=1         \
+
+
+-runrequires: \
+  osgi.identity;filter:='(osgi.identity=com.io7m.bndtest.main)', \
+  osgi.identity;filter:='(osgi.identity=org.apache.felix.shell.remote)', \
+

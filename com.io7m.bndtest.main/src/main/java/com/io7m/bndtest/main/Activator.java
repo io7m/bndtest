@@ -14,12 +14,28 @@
  * IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-/**
- * A test application.
- */
-
-@org.osgi.annotation.bundle.Header(
-  name = "Bundle-Activator",
-  value = "com.io7m.bndtest.main.Activator")
 
 package com.io7m.bndtest.main;
+
+import org.osgi.framework.BundleActivator;
+import org.osgi.framework.BundleContext;
+
+public final class Activator implements BundleActivator
+{
+  public Activator()
+  {
+
+  }
+
+  @Override
+  public void start(final BundleContext context)
+  {
+    System.out.println("START!");
+  }
+
+  @Override
+  public void stop(final BundleContext context)
+  {
+    System.out.println("STOP!");
+  }
+}
